@@ -1,0 +1,13 @@
+/*Table border specifications*/
+table{
+    border-style:solid;
+}
+th, td{
+    border-style:solid;
+}
+
+/*Table's first column - normal text and italicized*/
+table tbody tr th {
+  font-style: italic;
+  font-weight: normal;
+}
