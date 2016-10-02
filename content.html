@@ -114,7 +114,7 @@
         <!-- 4)Two forms. One submitted via POST, the other via GET-->
         <h2>Forms</h2>
         <ol>
-            <!--Form sumbit via post-->
+            <!--A)Form sumbit via post-->
             <li>Form sumbit via post</li>
 
             <!--submission site address-->
@@ -138,7 +138,7 @@
                 </fieldset>
                 <br />
 
-                <!--Password input-->
+                <!--3)Password input-->
                 <fieldset>
                     <legend>Password Input</legend>
                     <label>Password:
@@ -147,21 +147,74 @@
                 </fieldset>
                 <br />
 
-                <!--Radio inputs-->
+                <!--4)Radio inputs-->
                 <fieldset>
                     <legend>Radio Inputs</legend>
-                    <p>Of the three candy options, which is your favorite?
+                    <p>Of the three candy options, which one is your favorite?
                     <br />
                     <label>
-                        <input type="radio" name="candy" value="Snickers"/>
-                        <input type="radio" name="candy" value="Skittles"/>
-                        <input type="radio" name="candy" value="Mentos"/>
+                        <input type="radio" name="candy" value="Snickers"/>Snickers</label>
+                    <label>
+                        <input type="radio" name="candy" value="Skittles"/>Skittles</label>
+                    <label>
+                        <input type="radio" name="candy" value="Mentos"/>Mentos
                     </label>
                 </fieldset>
+
+                <!--5)Submit button-->
+                <input type="submit" value="Submit form" />
             </form>
 
-            <!--Form submitted with get-->
+            <!--B)Form submitted with get-->
             <li>Form submit via get</li>
+
+            <!--submission site address-->
+            <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+
+                <!--1)Text input-->
+                <fieldset>
+                    <legend>Text Input</legend>
+                    <label>Name:
+                        <input type="text" name="text_input" size="15" maxlength="30">
+                    </label>
+                </fieldset>
+                <br />
+
+                <!--2)Numberic input-->
+                <fieldset>
+                    <legend>Numeric Input</legend>
+                    <label>Number:
+                        <input type="number" name="numerical_input" size="15" maxlength="30">
+                    </label>
+                </fieldset>
+                <br />
+
+                <!--3)Password input-->
+                <fieldset>
+                    <legend>Password Input</legend>
+                    <label>Password:
+                        <input type="password" name="password_input" size="15" maxlength="30">
+                    </label>
+                </fieldset>
+                <br />
+
+                <!--4)Radio inputs-->
+                <fieldset>
+                    <legend>Radio Inputs</legend>
+                    <p>Of the three candy options, which one is your favorite?
+                    <br />
+                    <label>
+                        <input type="radio" name="candy" value="Snickers"/>Snickers</label>
+                    <label>
+                        <input type="radio" name="candy" value="Skittles"/>Skittles</label>
+                    <label>
+                        <input type="radio" name="candy" value="Mentos"/>Mentos
+                    </label>
+                </fieldset>
+
+                <!--5)Submit button-->
+                <input type="submit" value="Submit form" />
+            </form>
         </ol>
     </body>
 <html>
