@@ -109,7 +109,53 @@
         <!-- 4)Two forms.  One submitted via post, the other via get-->
         <h2>Forms</h2>
         <ol>
+            <!--Form sumbit via post-->
             <li>Form sumbit via post</li>
+
+            <!--submission site address-->
+            <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+
+                <!--1)Text input-->
+                <fieldset>
+                    <legend>Text Input</legend>
+                    <label>Name:
+                        <input type="text" name="text_input" size="15" maxlength="30">
+                    </label>
+                </fieldset>
+                <br />
+
+                <!--2)Numberic input-->
+                <fieldset>
+                    <legend>Numeric Input</legend>
+                    <label>Number:
+                        <input type="number" name="numerical_input" size="15" maxlength="30">
+                    </label>
+                </fieldset>
+                <br />
+
+                <!--Password input-->
+                <fieldset>
+                    <legend>Password Input</legend>
+                    <label>Password:
+                        <input type="password" name="password_input" size="15" maxlength="30">
+                    </label>
+                </fieldset>
+                <br />
+
+                <!--Radio inputs-->
+                <fieldset>
+                    <legend>Radio Inputs</legend>
+                    <p>Of the three candy options, which is your favorite?
+                    <br />
+                    <label>
+                        <input type="radio" name="candy" value="Snickers"/>
+                        <input type="radio" name="candy" value="Skittles"/>
+                        <input type="radio" name="candy" value="Mentos"/>
+                    </label>
+                </fieldset>
+            </form>
+
+            <!--Form submitted with get-->
             <li>Form submit via get</li>
         </ol>
     </body>
